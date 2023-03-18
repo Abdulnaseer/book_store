@@ -1,5 +1,5 @@
 import 'package:book_store/constants.dart';
-import 'package:book_store/core/utils/assets.dart';
+import 'package:book_store/core/utils/assets_data.dart';
 import 'package:book_store/features/Splash/presentation/views/widgets/sliding_text.dart';
 import 'package:book_store/features/home/presentation/views/home_view.dart';
 import 'package:flutter/material.dart';
