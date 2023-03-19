@@ -10,7 +10,7 @@ class HomeViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24),
+      padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * .08),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -18,6 +18,7 @@ class HomeViewBody extends StatelessWidget {
           const FeaturedBooksListView(),
           SizedBox(height: MediaQuery.of(context).size.height * .07),
           const Text("Best Seller", style: Styles.textStyle18),
+          SizedBox(height: MediaQuery.of(context).size.height * .04),
           const BestSellerListViewItem(),
         ],
       ),
@@ -47,6 +48,20 @@ class BestSellerListViewItem extends StatelessWidget {
                 ),
               ),
             ),
+          ),
+          SizedBox(width: MediaQuery.of(context).size.width * .07),
+          Column(
+            children: [
+              SizedBox(
+                width: MediaQuery.of(context).size.width * .5,
+                child: const Text(
+                  "Harry Potter and the Goblet of Fire",
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: Styles.textStyle20,
+                ),
+              ),
+            ],
           )
         ],
       ),
